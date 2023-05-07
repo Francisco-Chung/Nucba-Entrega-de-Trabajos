@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #24252A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 30px;
+}
+
+.cont-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-logo img {
+    height: 65px;
+    cursor: pointer;
+}
+
+.cont-logo span {
+    color: crimson;
+    ;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #edf0f1;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-list a:hover {
+    color: crimson;
+}
+
+/* main */
+main {
+    background: #1a1515;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+/* hero */
+#hero {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 32px;
+    min-width: 500px;
+    font-weight: 800;
+    color: crimson;
+}
+
+.hero-info h2 {
+    font-size: 24px;
+    min-width: 500px;
+    font-weight: 600;
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 100%;
+}
+
+.hero-info-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-info-links a {
+    color: white;
+    font-weight: 600;
+    background: #24252A;
+    width: 150px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-info-links a:hover {
+    color: crimson;
+}
+
+/* hero about */
+#hero-about {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#hero-about h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: crimson;
+}
+
+#hero-about h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#hero-about p {
+    font-size: 14px;
+}
