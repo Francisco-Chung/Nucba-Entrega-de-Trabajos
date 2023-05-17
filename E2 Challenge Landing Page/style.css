@@ -7,9 +7,13 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background: black;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -91,13 +95,14 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
 }
 
 .hero-info h1 {
@@ -345,9 +350,9 @@ footer img {
         padding: 45px 30px;
         gap: 80px;
         z-index: 2;
-        /* display: none; */
-        transform: translateX(200%);
-        transition: all 0.5s ease;
+        display: none;
+        /* transform: translateX(200%);
+        transition: all 0.5s ease; */
     }
 
     .navbar-list a {
@@ -366,8 +371,8 @@ footer img {
     }
 
     #menu-toggle:checked+.navbar-list {
-        /* display: flex; */
-        transform: translateX(0%);
+        display: flex;
+        /* transform: translateX(0%); */
     }
 
     /* Hero */
@@ -386,6 +391,12 @@ footer img {
     }
 
     .hero-info h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .hero-info h2 {
         width: 90%;
         max-width: 500px;
         min-width: unset;
@@ -421,13 +432,17 @@ footer img {
 }
 
 @media (max-width: 576px) {
-    html {
-        overflow-x: hidden;
+    .cont-logo span {
+        font-size: 1.5rem;
+    }
+
+    #hero {
+        margin: 0 auto;
     }
 
     .hero-info h2 {
         text-align: center;
-        width: 20%;
+        max-width: 300px;
         font-size: 22px;
     }
 
@@ -438,7 +453,7 @@ footer img {
     }
 
     .hero-card img {
-        width: 100%;
+        width: 90%;
         margin-right: 600px;
     }
 
@@ -464,10 +479,46 @@ footer img {
     .dual-bios {
         font-size: 16px;
         text-align: center;
-        width: 110%;
+        width: 90%;
     }
 
+    .contact-info{
+        margin-right: 2rem;
+    }
+    
     .contact-img {
         display: none;
+    }
+
+    .footer-links {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-list {
+        width: 60%;
+        left: 38%;
+    }
+    
+    .cont-logo span {
+        font-size: 1.2rem;
+    }
+
+    .hero-card img {
+        width: 80%;
+        margin-left: 10px;
+    }
+    
+    .hero-info-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links {
+        gap: 25px;
+        font-size: 14px;
     }
 }
