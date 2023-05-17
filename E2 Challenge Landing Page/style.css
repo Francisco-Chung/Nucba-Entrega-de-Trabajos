@@ -7,14 +7,23 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background: black;
+    overflow-x: hidden;
+}
+
 header {
     background-color: #24252A;
+    background: linear-gradient(to bottom, rgb(82, 13, 13), black);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0px 30px;
+    padding: 0px 30px 0px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .cont-logo {
@@ -30,7 +39,6 @@ header {
 
 .cont-logo span {
     color: crimson;
-    ;
     font-weight: bolder;
     font-size: 2rem;
     font-style: italic;
@@ -59,9 +67,15 @@ header {
     color: crimson;
 }
 
+/* Menu Hamburguesa */
+#menu-toggle,
+.menu-label {
+    display: none;
+}
+
 /* main */
 main {
-    background: #1a1515;
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,10 +87,10 @@ main {
 /* hero */
 #hero {
     padding: 70px 0;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
 }
 
 .hero-info {
@@ -88,8 +102,9 @@ main {
 
 .hero-info h1 {
     font-size: 32px;
-    min-width: 500px;
     font-weight: 800;
+    width: 80%;
+    min-width: 500px;
     color: crimson;
 }
 
@@ -101,7 +116,6 @@ main {
 
 .hero-info p {
     font-size: 14px;
-    width: 100%;
 }
 
 .hero-info-links {
@@ -149,4 +163,311 @@ main {
 
 #hero-about p {
     font-size: 14px;
+    width: 80%;
+}
+
+/* Info */
+#info {
+    padding-top: 40px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-card {
+    width: 350px;
+    height: 550px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 100%;
+}
+
+.zero-rpm {
+    height: 37.5%;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: crimson;
+}
+
+.dual-bios,
+.info-card p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0px 0px 20px 0px;
+    color: white;
+    line-height: 1.2rem;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 0 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: crimson;
+}
+
+.contact-info ul li>span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-media {
+    gap: 40px;
+}
+
+.social-media a {
+    margin-right: 5%;
+}
+
+.social-media a>img {
+    width: 10%;
+}
+
+.contact-img img {
+    width: 80%;
+    margin-left: 100px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 40px 0px;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: crimson;
+}
+
+footer img {
+    width: 80px;
+}
+
+/* Mediaqueries */
+@media (max-width: 1280px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-info h1 {
+        margin: 0 auto;
+    }
+
+    .hero-card {
+        margin-left: 100px;
+    }
+
+    .contact-info {
+        margin-left: 150px;
+    }
+
+    .contact-img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 70px;
+        left: 59%;
+        width: 40%;
+        flex-direction: column;
+        background: linear-gradient(to bottom, black, rgb(82, 13, 13));
+        /* border: 2px solid rgb(82, 13, 13); */
+        border-top: none;
+        border-radius: 0px 0px 15px 15px;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 80px;
+        z-index: 2;
+        /* display: none; */
+        transform: translateX(200%);
+        transition: all 0.5s ease;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 25px;
+        width: 30px;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        /* display: flex; */
+        transform: translateX(0%);
+    }
+
+    /* Hero */
+    #hero {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-info h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .hero-info p {
+        max-width: 600px;
+    }
+
+    .hero-info-links {
+        gap: 80px;
+    }
+
+    #hero-about {
+        text-align: center;
+        width: 80%;
+    }
+
+    #contact {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-info h2 {
+        width: 60%;
+    }
+
+    .contact-img {
+        max-width: 350px;
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .hero-info h2 {
+        text-align: center;
+        width: 20%;
+        font-size: 22px;
+    }
+
+    .hero-info p {
+        text-align: center;
+        width: 60%;
+        font-size: 16px;
+    }
+
+    .hero-card img {
+        width: 100%;
+        margin-right: 600px;
+    }
+
+    #hero-about h2 {
+        font-size: 26px;
+    }
+
+    #hero-about h3 {
+        font-size: 20px;
+
+    }
+
+    #hero-about p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+    }
+
+    .info-card p,
+    .dual-bios {
+        font-size: 16px;
+        text-align: center;
+        width: 110%;
+    }
+
+    .contact-img {
+        display: none;
+    }
 }
