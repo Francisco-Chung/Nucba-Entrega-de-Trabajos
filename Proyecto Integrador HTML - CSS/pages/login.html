@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/img/logo-removebg-preview.png" alt="Logo">
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="bars-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="./login.html" class="login">Login</a></li>
+                <li><a href="./register.html" class="register">Registrarme</a></li>
+            </ul>
+            <label for="cart-toggle" class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="cart">
+                <h2>Tus pedidos</h2>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="../assets/img/menu-1.png" alt="">
+                        <h3 class="item-title">Americano</h3>
+                        <span class="item-price">$ 250</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="../assets/img/menu-2.png" alt="">
+                        <h3 class="item-title">Latte</h3>
+                        <span class="item-price">$ 280</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="../assets/img/product-1.png" alt="">
+                        <h3 class="item-title">Café Tostado Italia</h3>
+                        <span class="item-price">$ 4.250</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$ 4.780</span>
+                </div>
+                <button class="btn-compra">FINALIZAR PEDIDO</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form">
+            <label for="username">Usuario</label>
+            <input type="text" id="username">
+            <label for="password">Contraseña</label>
+            <input type="text" id="password">
+            <a href="../index.html" class="btn-submit">Iniciar Sesión</a>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

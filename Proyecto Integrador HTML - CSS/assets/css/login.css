@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 81.4vh;
+}
+
+.form label {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form input {
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+input:focus {
+    background: wheat;
+    transition: all 0.5s ease;
+}
+
+.btn-submit {
+    background: wheat;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}

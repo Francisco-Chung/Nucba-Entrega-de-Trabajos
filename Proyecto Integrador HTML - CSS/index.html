@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Place</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo-removebg-preview.png" alt="Logo">
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="bars-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar-list">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="./pages/login.html" class="login">Login</a></li>
+                <li><a href="./pages/register.html" class="register">Registrarme</a></li>
+            </ul>
+            <label for="cart-toggle" class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="cart">
+                <h2>Tus pedidos</h2>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="./assets/img/menu-1.png" alt="">
+                        <h3 class="item-title">Americano</h3>
+                        <span class="item-price">$ 250</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="./assets/img/menu-2.png" alt="">
+                        <h3 class="item-title">Latte</h3>
+                        <span class="item-price">$ 280</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="./assets/img/product-1.png" alt="">
+                        <h3 class="item-title">Café Tostado Italia</h3>
+                        <span class="item-price">$ 4.250</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$ 4.780</span>
+                </div>
+                <button class="btn-compra">FINALIZAR PEDIDO</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Disfruta tus mejores momentos con un café</h1>
+            <p>¡Vení a visitarnos, sigamos compartiendo nuestro amor por el café!</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-container">
+                <div class="about-info">
+                    <h3>Desde 1960, los mejores cafés del mundo cerca tuyo</h3>
+                    <p>Ofrecemos las mejores variedades de café, de primera calidad, acompañados por una gran propuesta
+                        gastronómica para que disfrutes de una experiencia distinta en un ambiente relajado.</p>
+                </div>
+                <img src="./assets/img/about-img.jpg" alt="Imagen about">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Nuestro menú</h2>
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-1.png" alt="">
+                    <div class="menu-info">
+                        <h4>Americano</h4>
+                        <p>$ 250</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-2.png" alt="">
+                    <div class="menu-info">
+                        <h4>Latte</h4>
+                        <p>$ 280</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-3.png" alt="">
+                    <div class="menu-info">
+                        <h4>Caramel Macchiato</h4>
+                        <p>$ 350</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-4.png" alt="">
+                    <div class="menu-info">
+                        <h4>Mocha Blanco</h4>
+                        <p>$ 400</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-5.png" alt="">
+                    <div class="menu-info">
+                        <h4>Cappuccino</h4>
+                        <p>$ 280</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="./assets/img/menu-6.png" alt="">
+                    <div class="menu-info">
+                        <h4>Vainilla Latte Helado</h4>
+                        <p>$ 300</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Productos destacados</h2>
+            <div class="products-container">
+
+                <div class="product">
+                    <img src="./assets/img/product-1.png" alt="">
+                    <div class="product-info">
+                        <h4>Café Tostado Italia</h4>
+                        <p>$ 4.250</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./assets/img/product-2.png" alt="">
+                    <div class="product-info">
+                        <h4>Café Tostado Brazil</h4>
+                        <p>$ 3.750</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./assets/img/product-3.png" alt="">
+                    <div class="product-info">
+                        <h4>Café Tostado Marruecos</h4>
+                        <p>$ 4.500</p>
+                        <button class="btn-compra">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="inputBox">
+                            <span class="fas fa-user"></span>
+                            <input type="text" placeholder="nombre">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-envelope"></span>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fas fa-phone"></span>
+                            <input type="number" placeholder="número de contacto">
+                        </div>
+                        <div class="inputBox">
+                            <span class="fa-solid fa-message"></span>
+                            <textarea cols="30" rows="5" placeholder="dejanos tu mensaje"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-send">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-location-dot"></i>Avenida Random 123</p>
+                    <p><i class="fas fa-envelope"></i>coffee_place@nucba.com.ar</p>
+                    <p><i class="fas fa-phone"></i>15 5555 5555</p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                </div>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26259.21165728335!2d-58.6033108256836!3d-34.64456299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e5e57a3401%3A0xc581247b159bea95!2sStarbucks!5e0!3m2!1sen!2sar!4v1686964537185!5m2!1sen!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
