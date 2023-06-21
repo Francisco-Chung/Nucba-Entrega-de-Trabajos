@@ -32,8 +32,8 @@ header {
 
 }
 
-header img {
-    height: 135%;
+.logo {
+    height: 120px;
 }
 
 .navbar {
@@ -41,6 +41,11 @@ header img {
     gap: 100px;
     justify-content: center;
     align-items: center;
+}
+
+.navbar-list li a {
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .bars-menu {
@@ -87,6 +92,7 @@ header img {
 .cart-icon {
     font-size: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .cart {
@@ -227,7 +233,7 @@ header img {
     max-width: 45rem;
     color: #fff;
     /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 #hero p {
@@ -235,7 +241,7 @@ header img {
     max-width: 45rem;
     color: #fff;
     /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 
@@ -348,6 +354,7 @@ header img {
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .product img {
@@ -417,6 +424,7 @@ form .btn-send {
     font-weight: 600;
     display: flex;
     justify-content: center;
+    transition: color 0.3s ease;
 }
 
 .contact-info {
@@ -452,7 +460,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 50px 0;
+    padding: 45px 0;
     border-top: 2px solid black;
 }
 
@@ -460,6 +468,8 @@ footer a,
 footer p {
     color: black;
     font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .footer-links {
@@ -561,15 +571,14 @@ footer p {
 
 
 @media (max-width: 576px) {
-    .map {
-        width: 450px;
-        height: 300px;
-        ;
+    header {
+        padding: 0 15px;
     }
-}
 
+    .navbar {
+        gap: 25px;
+    }
 
-@media (max-width: 576px) {
     #hero {
         padding: 0 15px;
         text-align: center;
@@ -607,6 +616,12 @@ footer p {
     .footer-links {
         flex-direction: column;
     }
+
+    .map {
+        width: 450px;
+        height: 300px;
+        ;
+    }
 }
 
 
@@ -619,13 +634,7 @@ footer p {
 
 
 @media (max-width: 372px) {
-    header {
-        padding: 0 15px;
-    }
 
-    .navbar {
-        gap: 20px;
-    }
 
     #about h2 {
         text-align: center;
@@ -654,4 +663,18 @@ footer p {
 /* ---------------------- Animaciones ---------------------- */
 html {
     scroll-behavior: smooth;
+}
+
+.navbar-list li a:hover,
+.footer-links li a:hover {
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.btn-compra:hover,
+.btn-send:hover,
+.cart-icon:hover {
+    color: white;
+    transition: all 0.3s ease;
 }
