@@ -207,7 +207,7 @@ header {
 /*Toggle del carro*/
 #cart-toggle:checked+.cart {
     transform: translate(0%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    transition: all 0.5s ease;
 }
 
 
@@ -232,7 +232,6 @@ header {
     text-transform: uppercase;
     max-width: 45rem;
     color: #fff;
-    /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
@@ -240,7 +239,6 @@ header {
     font-size: 2rem;
     max-width: 45rem;
     color: #fff;
-    /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
@@ -370,6 +368,7 @@ header {
     flex-wrap: wrap;
     padding: 100px 0px;
     margin: 0 auto;
+    /* max-width: 1600px; */
 }
 
 .contact-container {
@@ -448,8 +447,7 @@ form .btn-send {
 }
 
 .map {
-    width: 350px;
-    height: 400px;
+    max-width: 600px;
 }
 
 /* footer */
@@ -479,7 +477,14 @@ footer p {
 }
 
 /* ---------------------- Mediaqueries ---------------------- */
-@media (max-width: 1268px) {
+@media (max-width: 1307px) {
+    .map {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 1284px) {
     .navbar {
         gap: 50px;
     }
@@ -526,24 +531,20 @@ footer p {
         gap: 25px;
         margin: 0 auto;
     }
-
-    .map {
-        margin-top: 40px;
-        width: 750px;
-        height: 400px;
-    }
 }
 
 
 @media (max-width: 768px) {
-    .about-info h3 {
-        font-size: 1.3rem;
+    .about-container img {
+        width: 100%;
+        height: 320px;
     }
-
-    .about-info p {
-        font-size: 16px;
+    
+    .about-info {
+        width: 90%;
+        padding: 30px 0;
     }
-
+    
     .contact-container {
         gap: 25px;
         padding: 0px 15px;
@@ -553,19 +554,15 @@ footer p {
     .inputBox textarea {
         font-size: 1.1rem;
     }
-
-    .map {
-        width: 650px;
-        height: 400px;
-        margin-top: 10px;
+    
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
-}
-
-
-@media (max-width: 696px) {
-    .map {
-        width: 550px;
-        height: 400px;
+    
+    .map iframe {
+        width: 100%;
     }
 }
 
@@ -592,12 +589,6 @@ footer p {
         font-size: 28px;
     }
 
-    .about-container {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
     .about-info {
         width: 90%;
         padding: 20px 0;
@@ -616,26 +607,10 @@ footer p {
     .footer-links {
         flex-direction: column;
     }
-
-    .map {
-        width: 450px;
-        height: 300px;
-        ;
-    }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 500px) {
-    .map {
-        width: 270px;
-        height: 300px;
-    }
 }
 
 
 @media (max-width: 372px) {
-
-
     #about h2 {
         text-align: center;
     }
