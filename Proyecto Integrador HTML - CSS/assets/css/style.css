@@ -567,7 +567,7 @@ footer p {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 582px) {
     header {
         padding: 0 15px;
     }
@@ -606,6 +606,7 @@ footer p {
 
     .footer-links {
         flex-direction: column;
+        text-align: center;
     }
 }
 
