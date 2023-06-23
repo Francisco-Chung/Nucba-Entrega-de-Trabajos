@@ -518,6 +518,10 @@ footer p {
 
 
 @media (max-width: 992px) {
+    .navbar {
+        gap: 25px;
+    }
+    
     .about-info h3 {
         font-size: 1.5rem;
     }
@@ -569,11 +573,15 @@ footer p {
 
 @media (max-width: 582px) {
     header {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 
     .navbar {
         gap: 25px;
+    }
+
+    .cart-icon {
+        padding-right: 10px;
     }
 
     #hero {
