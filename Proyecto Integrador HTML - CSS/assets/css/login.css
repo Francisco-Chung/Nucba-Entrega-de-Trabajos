@@ -55,3 +55,9 @@ input:focus {
 .form a span:hover {
     font-weight: 600;
 }
+
+@media (max-width:576px) {
+    .form {
+        height: 100vh;
+    }
+}
