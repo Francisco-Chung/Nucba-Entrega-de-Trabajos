@@ -571,6 +571,10 @@ footer p {
         gap: 50px;
     }
     
+    .map {
+        margin-top: 0px;
+    }
+    
     .map iframe {
         width: 100%;
     }
