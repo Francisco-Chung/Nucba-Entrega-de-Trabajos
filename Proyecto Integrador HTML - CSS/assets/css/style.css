@@ -317,9 +317,15 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     width: 100%;
 }
+
+/* .menu-container {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+} */
 
 .menu-item,
 .product {
@@ -573,7 +579,7 @@ footer p {
 
 @media (max-width: 582px) {
     header {
-        padding: 0 5px;
+        padding: 0;
     }
 
     .navbar {
@@ -581,7 +587,7 @@ footer p {
     }
 
     .cart-icon {
-        padding-right: 10px;
+        padding-right: 22px;
     }
 
     #hero {
@@ -610,6 +616,11 @@ footer p {
     .cart-item,
     .item-info {
         flex-direction: column;
+    }
+
+    .product img {
+        width: 280px;
+        height: 210px;
     }
 
     .footer-links {
