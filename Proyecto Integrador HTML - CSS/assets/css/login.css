@@ -58,6 +58,6 @@ input:focus {
 
 @media (max-width:576px) {
     .form {
-        height: 100vh;
+        height: 90vh;
     }
 }
